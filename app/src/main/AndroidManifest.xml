@@ -20,7 +20,6 @@
         <activity
             android:name=".ui.activity.SplashActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
-            android:label="@string/title_activity_splash"
             android:theme="@style/FullscreenTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,10 +29,9 @@
         </activity>
         <activity android:name=".ui.activity.MainActivity" />
         <activity android:name=".ui.activity.BlurActivity" />
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
         <activity android:name=".ui.activity.NavigationActivity" />
         <activity android:name=".ui.activity.AlarmActivity" />
+        <activity android:name=".ui.activity.LoginActivity"></activity>
     </application>
+
 </manifest>

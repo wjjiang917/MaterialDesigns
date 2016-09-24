@@ -99,6 +99,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="6dp"
+                        android:adjustViewBounds="true"
                         android:padding="5dp"
                         android:src="@mipmap/whatismaterialenvironment3d" />
                 </LinearLayout>
@@ -136,7 +137,6 @@
                         android:gravity="center">
 
                         <ImageView
-                            android:id="@+id/img_las_one"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
@@ -234,7 +234,6 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/img_goal_two"
                         android:layout_width="300dp"
                         android:layout_height="150dp"
                         android:layout_marginBottom="6dp"

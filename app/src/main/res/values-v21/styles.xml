@@ -6,4 +6,13 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="colorControlHighlight">@color/colorPrimaryHome</item>
+        <item name="colorButtonNormal">@color/colorPrimaryblueGrey</item>
+        <!--<item name="android:stateListAnimator">@drawable/state_list_animator_z</item>-->
+    </style>
 </resources>

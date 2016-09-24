@@ -87,7 +87,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         int id = item.getItemId();
 
         switch (item.getItemId()) {
-            case R.id.nav_camera:
+            case R.id.menu_profile:
+                startActivity(new Intent(this, LoginActivity.class));
                 break;
             case R.id.nav_blur:
                 startActivity(new Intent(this, BlurActivity.class));
