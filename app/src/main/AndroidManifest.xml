@@ -31,7 +31,10 @@
         <activity android:name=".ui.activity.BlurActivity" />
         <activity android:name=".ui.activity.NavigationActivity" />
         <activity android:name=".ui.activity.AlarmActivity" />
-        <activity android:name=".ui.activity.LoginActivity"></activity>
+        <activity android:name=".ui.activity.LoginActivity" />
+        <activity android:name=".ui.activity.DanmuActivity" />
+        <activity android:name=".ui.activity.FullActivity" />
+        <activity android:name=".ui.activity.CameraActivity"></activity>
     </application>
 
 </manifest>

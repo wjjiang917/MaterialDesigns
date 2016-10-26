@@ -101,6 +101,17 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                 break;
             case R.id.nav_share:
                 break;
+
+            case R.id.nav_danmu:
+                startActivity(new Intent(this, DanmuActivity.class));
+                break;
+
+            case R.id.nav_full:
+                startActivity(new Intent(this, FullActivity.class));
+                break;
+            case R.id.nav_camera:
+                startActivity(new Intent(this, CameraActivity.class));
+                break;
         }
 
         mDrawer.closeDrawer(GravityCompat.START);
