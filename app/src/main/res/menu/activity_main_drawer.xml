@@ -31,6 +31,11 @@
             android:id="@+id/nav_camera"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Camera" />
+
+        <item
+            android:id="@+id/nav_screenshot"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Screenshot" />
     </group>
 
     <item android:title="Communicate">

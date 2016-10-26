@@ -40,7 +40,6 @@ public class CameraActivity extends BaseActivity {
         mSurfaceHolder.addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder surfaceHolder) {
-                initCameraAndPreview();
             }
 
             @Override
@@ -53,20 +52,5 @@ public class CameraActivity extends BaseActivity {
         });
     }
 
-    private void initCameraAndPreview() {
-        Logger.d("init camera and preview...");
-        HandlerThread handlerThread = new HandlerThread("Camera2");
-        handlerThread.start();
 
-        try {
-            mCameraId = "" + CameraCharacteristics.LENS_FACING_FRONT;
-            mImageReader = ImageReader.newInstance(mSurfaceView.getWidth(), mSurfaceView.getHeight(),
-                    ImageFormat.JPEG,/*maxImages*/7);
-            mImageReader.setOnImageAvailableListener(mOnImageAvailableListener, mHandler);
-
-            mCameraManager.openCamera(mCameraId, DeviceStateCallback, mHandler);
-        } catch (CameraAccessException e) {
-            Log.e("linc", "open camera failed." + e.getMessage());
-        }
-    }
 }

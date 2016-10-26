@@ -112,6 +112,9 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             case R.id.nav_camera:
                 startActivity(new Intent(this, CameraActivity.class));
                 break;
+            case R.id.nav_screenshot:
+                startActivity(new Intent(this, ScreenshotActivity.class));
+                break;
         }
 
         mDrawer.closeDrawer(GravityCompat.START);
